@@ -1,0 +1,232 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Nanum+Gothic|Roboto&display=swap');
+
+/*reset*/
+html,body,h1,h2,h3,h4,div,p,ul,ol,li,dl,dt,dd,header,nav,section,article,aside,figure,footer,address 
+{margin:0;padding:0;box-sizing:border-box;}
+h1, h2, h3, h4 {font-weight: 100;}
+ul li, ol li {list-style: none;}
+a{text-decoration: none; color:inherit}
+a img {border:none;}
+li {list-style: none;}
+img {vertical-align: middle;}
+header, main, footer, section, article, aside, nav {display: block;}
+html,body{width:100%; height: 100%;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+.mobile {display: none !important;}
+html{overflow-y: scroll; overflow-x: hidden;}
+
+
+body{
+    background: url(../img/johcompany_BG.jpg);
+    font-size: 12px;
+    letter-spacing: 1.5;
+    font-weight: normal;
+    font-family: 'Roboto';
+}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/***header***/
+header {
+    width:100%;
+    height: 70px;
+    margin:0 auto;
+}
+.gnb { 
+    width: 100%;
+    height: 70px;
+    margin: 40px auto;
+    color: #000000;
+    position:relative;
+}
+.gnb h1 {
+    display: inline-block;
+    position:absolute;
+    top:10%; left:10%;
+}
+.gnb h1 a{
+    display: inline-block; 
+}
+.gnbMenu {
+    position: absolute;
+    top:15%; left:35%;
+    overflow: hidden;
+}
+.gnbMenu li {
+    float:left;
+    letter-spacing: 1;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding:7px;
+    margin-left:10px;
+}
+.gnbMenu li a {
+    display: block;
+    padding-bottom: 3px;
+}
+.gnbMenu li a:hover {
+    border-bottom: 1px solid #fff;
+}
+.lang {
+    position:absolute;
+    right:0; top:15%;
+}
+.lang a {
+    margin-left:5px;
+}
+.lang a:hover {
+    text-decoration: underline;
+}
+.lang a:first-child {
+    color:gray;
+}
+.lang a:focus {
+    font-weight: bold;
+    text-decoration: none; 
+}/*main*/
+#main {overflow: hidden;
+/*background:blue;*/}
+/*location*/
+.location {
+    width:20%;
+    float:right;
+    /*background:yellow;*/
+}
+/*leftgnb*/
+.leftgnb {
+    width:20%;
+    float: left;
+    margin-top:60px;
+   /* background:pink;*/
+}
+/*main*/
+.contents {
+    width:80%;
+    float:right;
+    margin-top:40px;
+}
+.contents .aboutKo {
+    font-size:16px;
+    margin-top:10px;
+    letter-spacing:1.5;
+    font-weight:normal;
+    font-family:'Noto Sans KR';
+}
+.contents .aboutEn {
+    font-size:16px;
+    margin-top:10px;
+    font-weight:normal;
+    font-family:'Roboto';
+}
+/*footer*/
+footer #scrollTop {
+    position:absolute;
+    right:5%;
+    display: block;
+    width:50px;
+    height:50px;
+    margin:-80px auto 0;
+    padding:5px;
+    text-align: center;
+    line-height: 2;
+    color:#c4c2c4;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+#scrollTop i {
+    font-size:40px;
+}
+.innerfoot {
+    width:100%;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.topfoot {
+    overflow: hidden;
+    width:100%;
+    border-bottom:1px solid #4d4d4d;
+    padding-bottom:20px;
+}
+.topfoot a{
+    color: #afb4b4;
+}
+.topfoot li {
+    float:left;
+    width:25%;
+    overflow: hidden;
+    color: #b4b4b4;
+}
+.topfoot li .intro {
+    color: #787878;
+    font-size: 11px;
+    font-weight: 100;
+    letter-spacing: 0.03em;
+    line-height: 1.9;
+    font-family: 'Nanum Gothic';
+    margin:15px 0 15px 0;
+}
+.topfoot h4 {
+    color: white;
+    font-size:12px;
+}
+.topfoot .current {
+    overflow: hidden;
+}
+.topfoot .current > div{
+    float:left;
+    width:100px;
+}
+.current h4 {
+    color: #b4b4b4;
+    font-weight: bold;
+}
+.current .txtbox {
+    margin-left:20px;
+    margin-top:30px;
+}
+.current .txtbox a {
+    font-size:18px;
+    font-weight: bold;
+}
+.current .txtbox p {
+    font-size:18px;
+    font-weight: bold;
+}
+.thumb img {
+    width:90%;  
+}
+.bottomfoot {
+    position:relative;
+    height: 150px;
+    margin-top:20px;
+}
+.bottomfoot .address {
+    position:absolute;
+    top:0;
+    left:0;
+    color:#787878;
+    font-size:10px;
+}
+.bottomfoot .relation {
+    position: absolute;
+    top:0;
+    left:50%;
+}
+.bottomfoot .relation a {
+    margin-left:20px;
+}
+.bottomfoot .snsfoot {
+    position: absolute;
+    top:0;
+    right:0;
+}
+.bottomfoot .snsfoot a {
+    margin-left:10px;
+}
