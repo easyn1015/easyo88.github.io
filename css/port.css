@@ -178,7 +178,6 @@ footer {
 		width: 94%; 
 	}
 	.ul_portfolio li {width:100%;margin-left:0;margin-top:20px;}
-    .section4 .innerPortfolio .port{margin:0 10px;}
     .section4 .innerPortfolio .port .left {width:30%;}
     .section4 .innerPortfolio .port .right {width:70%;}
 }
@@ -187,7 +186,7 @@ footer {
 	.overlay a .closebtn{font-size:40px;top:15px;right:35px;}
     .section4 .innerPortfolio .port .right ul li span:nth-of-type(1){width: 10%;}
     .section4 .innerPortfolio .port .left{float:none;width:40%;padding:0 0 20px 0;}
-    .section4 .innerPortfolio .port .right{float:none;width:60%;padding:0 40px;}
+    .section4 .innerPortfolio .port .right{float:none;width:60%;padding:0 20px;}
     .section4 .innerPortfolio .port .right h2 {font-size: 22px;line-height: 30px;}
 }
 @media screen and (max-width:320px) {
