@@ -190,7 +190,7 @@ footer {
     .section4 .innerPortfolio .port .right h2 {font-size: 22px;line-height: 30px;}
 }
 @media screen and (max-width:320px) {
-    .section4 .innerPortfolio .port .left{float:none;width:25%;padding:0 0 20px 0;}
+    .section4 .innerPortfolio .port .left{float:none;padding:0 0 20px 0;}
     .section4 .innerPortfolio .port .right ul{padding:20px 0;}
     .section4 .innerPortfolio .port .right{padding:0;}
     .section4 .innerPortfolio .port .right ul li span:nth-of-type(2) {display: block;}
