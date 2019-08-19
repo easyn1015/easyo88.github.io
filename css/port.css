@@ -146,54 +146,53 @@ footer {
 	color: #cdcdcd;
 }
 /*tablet*/
-@media all and (min-width:769px) and (max-width:1200px) {
+@media screen and (max-width:1024px) {
 	header {
 		width:90%;
 	}
 	.innerSection {
 		width:90%;
 	}
-	.innerSection h1 {
-		font-size: 55px;
-	}	
-	.innerSection p {
-		font-size: 25px;
-	}
-	.innerPortfolio {
-		width:90%; 
-		margin:0 auto;
-		background: #fff;
-	}
+	.innerSection h2 {font-size:40px;line-height:48px;}	
+	.innerSection p {font-size: 20px;line-height:28px;}
+	.innerPortfolio {width:90%; margin:0 auto;background: #fff;}
+    
+    .section4 .innerPortfolio .port .right ul li span:nth-of-type(1){width:16%;}
+    .section4 .innerPortfolio .port .left {width:50%;}
+    .section4 .innerPortfolio .port .right {width:50%;}
 }
 
 /*mobile*/ /*전체를 감싸는 요소한테 16~10px 의 마진을 주는 것이 좋음*/
-@media all and (max-width:768px){
+@media screen and (max-width:768px){
 	header {
 		width: 94%;
 	}
 	.innerSection {
 		width: 94%;
 	}
-	.innerSection h1 {
-		font-size: 1.3em;
+	.innerSection h2 {
+		font-size: 20px;
 	}	
-	.innerSection p {
-		width: 60%;
-		font-size: 1.5em;
-	}
+	.innerSection p {width:60%;font-size:16px;line-height:24px;}
 	.innerPortfolio{
 		width: 94%; 
 	}
-	.ul_portfolio li {
-		width:100%;
-		margin-left:0;
-		margin-top 20px;
-	}
+	.ul_portfolio li {width:100%;margin-left:0;margin-top:20px;}
+    .section4 .innerPortfolio .port{margin:0 10px;}
+    .section4 .innerPortfolio .port .left {width:30%;}
+    .section4 .innerPortfolio .port .right {width:70%;}
 }
-@media all and (max-height:450px) {
+@media screen and (max-width:480px) {
 	.overlay a {font-size:20px}
-	.overlay a .closebtn {
-		font-size:40px; 
-		top:15px; right: 35px;
-    }
+	.overlay a .closebtn{font-size:40px;top:15px;right:35px;}
+    .section4 .innerPortfolio .port .right ul li span:nth-of-type(1){width: 10%;}
+    .section4 .innerPortfolio .port .left{float:none;width:40%;padding:0 0 20px 0;}
+    .section4 .innerPortfolio .port .right{float:none;width:60%;padding:0 40px;}
+    .section4 .innerPortfolio .port .right h2 {font-size: 22px;line-height: 30px;}
+}
+@media screen and (max-width:320px) {
+    .section4 .innerPortfolio .port .left{float:none;width:25%;padding:0 0 20px 0;}
+    .section4 .innerPortfolio .port .right ul{padding:20px 0;}
+    .section4 .innerPortfolio .port .right{padding:0;}
+    .section4 .innerPortfolio .port .right ul li span:nth-of-type(2) {display: block;}
 }

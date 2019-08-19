@@ -27,7 +27,7 @@ $(function(){
 $(document).ready(function() {
 			$('.index').on('click', function() {
 				$('.overlay').css({
-					height: '25%'
+					height: '33%'
 				});
 			});
 		$('.closebtn').on('click',function() {
