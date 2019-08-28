@@ -36,7 +36,10 @@ header {
     bottom:10%;
     right:0; 
 }
-
+.mainHeader .gnb{}
+.mainHeader .gnb ul{overflow: hidden;}
+.mainHeader .gnb ul li{float:left;}
+.mainHeader .gnb ul li a{display:block;padding:20px 10px;text-align:center; }
 header img {
 	width:150px;
 }
