@@ -60,7 +60,7 @@ $(document).ready(function () {
                 $('html,body').animate({scrollTop:$(this.has).offset().top}, 500);
         });
 */
-
+/*
     var $menu = $('.gnb ul li.m'),
         $contents = $('.section'),
         $doc = $('html, body');
@@ -91,5 +91,22 @@ $(document).ready(function () {
             }
         })
     });
-
+*/
+    $('.gnb ul li a').on('click', function () {
+    var index = $('.gnb ul li').index($(this).parent()) + 1; // 
+    var pos = $('#menu0' + index).position().top;
+    $(this).parents('.section').stop().animate({
+        'top': -100 + '%'
+    }, 100, function () {
+        $(this).css({
+            'display': 'none'
+        })
+        openBtn.parent().stop().animate({
+            'top': -20 + 'px'
+        }, 200);
+        $('html, body').animate({
+            scrollTop: pos
+        });
+    });
+});
 });
