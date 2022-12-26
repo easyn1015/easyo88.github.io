@@ -1,120 +1,59 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/fullpage.min.css" type="text/css">
-    <link rel="stylesheet" href="css/port.css" type="text/css">
-
-    <script src="js/jquery-3.4.0.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/port.js"></script>
-    <script src="js/fullpage.min.js"></script>
-    <script src="js/scrolloverflow.min.js"></script>
-    <!--스크롤 벗어남 방지-->
-
-    <title>이지연 포트폴리오</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ji Yeon's portfolio</title>
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Lee Ji Yeon">
+    <link rel="icon" type="img/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/d658c119e0.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/main.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="mainHeader">
-            <h1>LEE JI YEON</h1>
-            <div class="overlay">
-                <a href="#" class="closebtn">&times;</a>
-                <div class="overlayMenu">
-                    <p>이지연</p>
-                    <p>e-mail <a href="mailto:easyo1015@gamil.com" title="메일보내기">easyo1015@gamil.com</a></p>
-                </div>
-            </div>
-            <div class="index">
-                <a href="#">프로필</a>
-            </div>
-            <div class="gnb">
+    <div class="wrap">
+        <header class="header-wrap">
+            <h1>Lee Ji Yeon</h1>
+            <nav class="gnb">
                 <ul>
-                    <li><a href="#sec01" class="menu">Profile</a></li>
-                    <li><a href="#sec02" class="menu">introduce</a></li>
-                    <li><a href="#sec03" class="menu">Education&amp;Career</a></li>
-                    <li><a href="#sec04" class="menu">Portfolio</a></li>
+                    <li><a href="#content01" title="바로가기">Introduction</a></li>
+                    <li><a href="#content02" title="바로가기">Career</a></li>
+                    <li><a href="#content03" title="바로가기">Project</a></li>
                 </ul>
-            </div>
-        </div>
-    </header>
-    <div id="fullpage">
-        <div class="section section1" id="sec01">
-            <div class="innerSection">
-                <h2>Profile</h2>
-                <p>
-                    안녕하세요. <br>웹퍼블리셔 이지연의 개인 포트폴리오 사이트입니다.
-                </p>
-            </div>
-        </div>
-        <div class="section section2" id="sec02">
-            <div class="innerSection">
-                <h2>Introduce</h2>
-                <h3>소개</h3>
-                <p>
-                    간단한 소개를 하는 페이지입니다.
-                </p>
-            </div>
-        </div>
-        <div class="section section3" id="sec03">
-            <div class="innerSection">
-
-                <h2>Education &amp; career</h2>
-                <h3>교육과 경력사항</h3>
-                <p>
-                    교육과 경력사항을 정리한 페이지입니다.
-                </p>
-            </div>
-        </div>
-        <div class="section section4" id="sec04">
-            <div class="innerPortfolio">
-                <div class="port">
-                    <div class="left">
-                        <p class="mock"><img src="img/mockup03.png"></p>
-                    </div>
-                    <div class="right">
-                        <h2>B MAGAGINE</h2>
-                        <ul>
-                            <li><span>Viewport</span><span>PC 버전, 반응형</span></li>
-                            <li><span>작업</span><span>퍼블리싱 100%, 디자인 100%</span></li>
-                            <li><span>구성</span><span>Main Page, 웹진 형식</span></li>
-                        </ul>
-                        <div class="btn-go">
-                            <a href="https://easyo88.github.io/bmagazine/" target="_blank" title="새창열림">포트폴리오 바로가기</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="port">
-                    <div class="left">
-                        <p class="mock"><img src="img/mockup03.png"></p>
-                    </div>
-                    <div class="right">
-                        <h2>국립중앙박물관</h2>
-                        <ul>
-                            <li><span>Viewport</span><span>PC 버전</span></li>
-                            <li><span>작업</span><span>퍼블리싱 100%</span></li>
-                            <li><span>구성</span><span>Main Page, Sub Page : 관람정보, 전시</span></li>
-                        </ul>
-                        <div class="btn-go">
-                            <a href="https://easyo88.github.io/nationalmuseum/" target="_blank" title="새창열림">포트폴리오 바로가기</a>
-                        </div>
-                    </div>
+            </nav>
+        </header>
+        <section class="content-wrap">
+            <div class="main-visual-wrap">
+                <div class="main-visual-box">
+                    <p class="main-vi-text">A ship is safe in harbor,<br> but that's not what ships are for.</p>
                 </div>
             </div>
-            <footer>
-                <p>Copyright &copy; 2019</p>
-            </footer>
-        </div>
+            <article id="content01" class="content-box">
+                <h2 class="title">Introduction</h2>
+                <div class="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iusto et qui, repellendus veritatis quod aut ab porro harum commodi velit dolorum minima mollitia aspernatur? Aut ullam magni officia quod.</div>
+            </article>
+            <article id="content02" class="content-box">
+                <h2 class="title">Career</h2>
+                <div class="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore asperiores, accusamus dolorum, modi similique recusandae pariatur praesentium, veritatis et commodi culpa earum. At, qui. Libero tempore laboriosam aliquam eveniet.</div>
+            </article>
+            <article id="content03" class="content-box">
+                <h2 class="title">Project</h2>
+                <div class="text-box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eum beatae alias optio, nemo nulla sunt commodi enim ipsam perferendis consectetur doloribus fugit nihil facilis minima eaque sed asperiores expedita.</div>
+            </article>
+        </section>
+        <footer class="footer-wrap">
+            <p class="copyright">Lee Ji Yeon © 2022</p>
+            <a href="#a" class="btn-top"><span class="hide">Go To Top</span></a>
+        </footer>
     </div>
-    <div class="scroll">
-        <img src="img/down-arrow.png" alt="down-arrow">
-    </div>
-
 </body>
 
 </html>
