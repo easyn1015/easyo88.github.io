@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/* font */
+@import url('./reset.scss');
+@import url('./font.scss');
+
+$mainColor: #000;
+$pad: calc(max(20px, 4vmin));
+$doublePad: calc(#{$pad} * 2);
+$backgroundPad: calc(#{$pad} * 4);
+@mixin title($padding) {
+    position: relative;
+    padding: $padding;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+@mixin pseudo() {
+    content: '';
+    display: block;
+    position: absolute;
+}
+@mixin mask() {
+    left: 0;
+    width: 100%;
+    height: $pad;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+/* common */
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: 'Neue Montreal';
+}
+body {
+    background: $mainColor;
+}
+
+.hide {
+    display: none;
+}
+#root > div {
+    height: 100%;
+}
+/* layout */
+.wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.wrap:before {
+    @include pseudo;
+    @include mask;
+    top: 0;
+    z-index: 50;
+}
+.wrap:after {
+    @include pseudo;
+    @include mask;
+    bottom: 0;
+    z-index: 50;
+}
+.main {
+    position: fixed;
+    top: $pad;
+    left: $pad;
+    width: calc(100vw - #{$doublePad});
+    height: calc(100vh - #{$doublePad});
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    z-index: 40;
+}
+
+.background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100vw - #{$doublePad});
+    height: calc(100vh - #{$doublePad});
+    overflow: hidden;
+}
+.background canvas {
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+}
+.background.active {
+    z-index: 40;
+}
+.background .control-box {
+    display: none;
+    position: fixed;
+    z-index: 100;
+}
+.background.active .control-box {
+    display: block;
+}
+.main-title-box {
+    padding: 0 0 50px;
+}
+.main-title {
+    font-size: 60px;
+    font-weight: 300;
+    color: #fff;
+}
+.sub-title {
+    @include title(5px 0 0);
+}
+.title {
+    @include title(0 0 0 14px);
+    display: inline-block;
+}
+.title:before {
+    @include pseudo;
+    top: 5px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+}
+.content {
+    position: relative;
+    padding: 228px $pad;
+    margin: calc(#{$pad} * -1);
+    height: calc(100% + #{$doublePad});
+    background: rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    transition: all 0.2s;
+}
+.main:after {
+    @include pseudo;
+    top: calc(#{$pad} * -1);
+    left: calc(100% + 1px);
+    width: 49px;
+    height: calc(100% + #{$doublePad});
+    background: #000;
+    z-index: 20;
+}
+
+/* header */
+.header-wrap {
+    position: absolute;
+    top: $pad;
+    left: $pad;
+    padding: 40px;
+    z-index: 50;
+}
+
+.header-wrap {
+    nav {
+        ul {
+            li {
+                padding: 0 0 15px 0;
+            }
+        }
+    }
+}
+.header-wrap {
+    nav {
+        ul {
+            li:last-of-type {
+                padding: 0;
+            }
+        }
+    }
+}
+.header-wrap {
+    nav {
+        ul {
+            li {
+                a {
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    transition: all 0.2s;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-wrap {
+    nav {
+        ul {
+            li {
+                a.active {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+}
