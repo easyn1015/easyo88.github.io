@@ -1,10 +1,9 @@
-import { Routes, Route, NavLink, Switch } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import { ControllableParticles } from './ControllableParticles';
 import Home from './pages/Home';
 import Project from './pages/Project';
 import Info from './pages/Info';
 import './assets/css/style.scss';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 export default function App() {
     return (
