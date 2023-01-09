@@ -4,6 +4,15 @@
 @import url('./reset.scss');
 @import url('./font.scss');
 
+.right-enter {
+    opacity: 0;
+    transition: all 0.2s;
+}
+.right-enter.right-enter-active {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
 $mainColor: #000;
 $pad: calc(max(20px, 4vmin));
 $doublePad: calc(#{$pad} * 2);
@@ -126,7 +135,7 @@ body {
 }
 .content {
     position: relative;
-    padding: 228px $pad;
+    padding: 228px $doublePad;
     margin: calc(#{$pad} * -1);
     height: calc(100% + #{$doublePad});
     background: rgba(0, 0, 0, 0.3);
@@ -137,7 +146,7 @@ body {
     @include pseudo;
     top: calc(#{$pad} * -1);
     left: calc(100% + 1px);
-    width: 49px;
+    width: 51px;
     height: calc(100% + #{$doublePad});
     background: #000;
     z-index: 20;

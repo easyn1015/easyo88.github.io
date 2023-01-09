@@ -2,6 +2,7 @@
     "name": "gpgpu-curl-noise-dof",
     "version": "1.0.0",
     "description": "Curl noise and depth of field.",
+    "homepage": "https://easyn1015.github.io/easyo88.github.io/",
     "keywords": [
         "gpu",
         "shader",
@@ -16,6 +17,7 @@
         "babel-plugin-glsl": "1.0.0",
         "babel-plugin-macros": "3.1.0",
         "craco-plugin-scoped-css": "^1.1.1",
+        "gh-pages": "^4.0.0",
         "glsl-curl-noise2": "0.0.4",
         "glsl-noise": "0.0.0",
         "leva": "0.9.29",
@@ -24,6 +26,7 @@
         "react-dom": "18.2.0",
         "react-router-dom": "^6.6.1",
         "react-scripts": "5.0.1",
+        "react-transition-group": "^4.4.5",
         "three": "0.142.0",
         "v8": "0.1.0"
     },
@@ -35,7 +38,9 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d build"
     },
     "browserslist": [
         ">0.2%",
