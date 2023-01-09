@@ -1,7 +1,7 @@
 {
-    "name": "gpgpu-curl-noise-dof",
+    "name": "portfolio",
     "version": "1.0.0",
-    "description": "Curl noise and depth of field.",
+    "description": "Lee Ji Yeon's PortFoilo",
     "homepage": "https://easyn1015.github.io/portfolio/",
     "keywords": [
         "gpu",
