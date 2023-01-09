@@ -2,7 +2,7 @@
     "name": "gpgpu-curl-noise-dof",
     "version": "1.0.0",
     "description": "Curl noise and depth of field.",
-    "homepage": ".",
+    "homepage": "https://easyn1015.github.io/portfolio/",
     "keywords": [
         "gpu",
         "shader",
