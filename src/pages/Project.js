@@ -166,7 +166,9 @@ const Project = () => {
         <section className='project-wrap'>
             <div className='project-box'>
                 <div className='title-box'>
-                    <h3 className='title'>Projects (Publishing & Frontend Develop)</h3>
+                    <h3 className='title'>
+                        <span>Projects (Publishing & Frontend Develop)</span>
+                    </h3>
                 </div>
                 <div className='project-list'>
                     <ul>

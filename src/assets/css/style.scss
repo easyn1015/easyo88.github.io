@@ -3,16 +3,21 @@
 /* font */
 @import url('./reset.scss');
 @import url('./font.scss');
-
-.right-enter {
-    opacity: 0;
+.transition-wrapper {
     transition: all 0.2s;
 }
-.right-enter.right-enter-active {
+.fade-enter {
     opacity: 1;
     transition: all 0.2s;
 }
-
+.fade-enter-active {
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+.fade-exit {
+    opacity: 0;
+    transition: all 0.2s;
+}
 $mainColor: #000;
 $pad: calc(max(20px, 4vmin));
 $doublePad: calc(#{$pad} * 2);
@@ -122,13 +127,16 @@ body {
     @include title(5px 0 0);
 }
 .title {
-    @include title(0 0 0 14px);
+    @include title(0);
     display: inline-block;
 }
-.title:before {
+.title span {
+    position: relative;
+}
+.title span:before {
     @include pseudo;
     top: 5px;
-    left: 0;
+    left: -13px;
     width: 10px;
     height: 10px;
     background: #fff;
@@ -207,5 +215,20 @@ body {
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 255px $doublePad;
+    }
+    .main-title {
+        font-size: 30px;
+    }
+
+    .header-wrap {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 40px;
     }
 }
