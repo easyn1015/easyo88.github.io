@@ -232,4 +232,7 @@ body {
         left: auto;
         padding: 40px;
     }
+    .background.active .control-box {
+        display: none;
+    }
 }
