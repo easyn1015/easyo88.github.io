@@ -11,10 +11,10 @@ extend(THREE);
 
 export function ControllableParticles() {
     const props = useControls({
-        focus: { value: 5.9, min: 3, max: 7, step: 0.01 },
+        focus: { value: 5.62, min: 3, max: 7, step: 0.01 },
         speed: { value: 11.8, min: 0.1, max: 100, step: 0.1 },
-        aperture: { value: 4.6, min: 1, max: 5.6, step: 0.1 },
-        fov: { value: 54, min: 0, max: 200 },
+        aperture: { value: 4.4, min: 1, max: 5.6, step: 0.1 },
+        fov: { value: 16, min: 0, max: 200 },
         curl: { value: 0.02, min: 0.01, max: 0.5, step: 0.01 },
     });
     const location = useLocation();
