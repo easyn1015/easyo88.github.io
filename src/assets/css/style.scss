@@ -183,6 +183,15 @@ body {
     background: $mainColor;
     z-index: 20;
 }
+.main:before {
+    @include pseudo;
+    top: calc(#{$pad} * -1);
+    right: calc(100% + 1px);
+    width: 51px;
+    height: calc(100% + #{$doublePad});
+    background: $mainColor;
+    z-index: 20;
+}
 
 /* header */
 .header-wrap {
@@ -237,7 +246,6 @@ body {
             li {
                 a.active {
                     border-bottom: 1px solid #fff;
-                    opacity: 0.5;
                 }
             }
         }
