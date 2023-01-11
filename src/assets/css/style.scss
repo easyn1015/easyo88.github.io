@@ -7,6 +7,7 @@
 $mainColor: #000;
 $pad: calc(max(20px, 4vmin));
 $doublePad: calc(#{$pad} * 2);
+$halfPad: calc(#{$pad} * 1.5);
 $backgroundPad: calc(#{$pad} * 4);
 @mixin title($padding) {
     position: relative;
@@ -146,7 +147,7 @@ body {
 }
 .content {
     position: relative;
-    padding: 228px $doublePad;
+    padding: 228px $halfPad;
     margin: calc(#{$pad} * -1);
     height: calc(100% + #{$doublePad});
     background: rgba(0, 0, 0, 0.3);
@@ -241,12 +242,16 @@ body {
     .background.active .control-box {
         display: none;
     }
-}
-@media screen and (max-width: 480px) {
-    .content {
-        position: relative;
-        height: 100%;
-        padding: 0 $doublePad 300px;
-        margin: 255px calc(#{$pad} * -1) 0;
+    .header-wrap {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 14px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
     }
 }

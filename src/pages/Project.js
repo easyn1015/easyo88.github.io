@@ -67,7 +67,7 @@ const Project = () => {
             info: {
                 date: '2021',
                 period: '2021.10 ~ 2021.12',
-                role: 'Responsibilty',
+                role: 'assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -78,7 +78,7 @@ const Project = () => {
             info: {
                 date: '2021',
                 period: '2021.10 ~ 2021.12',
-                role: 'Responsibilty',
+                role: 'assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -89,7 +89,7 @@ const Project = () => {
             info: {
                 date: '2020',
                 period: '2020.10 ~ 2020.12',
-                role: 'Responsibilty',
+                role: 'assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -100,7 +100,7 @@ const Project = () => {
             info: {
                 date: '2020',
                 period: '2020.10 ~ 2020.12',
-                role: 'Responsibilty',
+                role: 'assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -122,7 +122,7 @@ const Project = () => {
             info: {
                 date: '2020',
                 period: '2020.10 ~ 2020.12',
-                role: 'Responsibilty',
+                role: 'assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -133,7 +133,7 @@ const Project = () => {
             info: {
                 date: '2020',
                 period: '2020.10 ~ 2020.12',
-                role: 'Responsibilty',
+                role: 'assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
