@@ -45,7 +45,7 @@ const Project = () => {
             info: {
                 date: '2022',
                 period: '2022.10 ~ 2022.12',
-                role: 'personal',
+                role: 'Personal',
                 lang: 'Vue, TypeScript, HTML, CSS',
                 contribution: 'Frontend Develop',
             },
@@ -67,7 +67,7 @@ const Project = () => {
             info: {
                 date: '2021',
                 period: '2021.10 ~ 2021.12',
-                role: 'assignee',
+                role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -78,7 +78,7 @@ const Project = () => {
             info: {
                 date: '2021',
                 period: '2021.10 ~ 2021.12',
-                role: 'assignee',
+                role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -89,7 +89,7 @@ const Project = () => {
             info: {
                 date: '2020',
                 period: '2020.10 ~ 2020.12',
-                role: 'assignee',
+                role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -100,7 +100,7 @@ const Project = () => {
             info: {
                 date: '2020',
                 period: '2020.10 ~ 2020.12',
-                role: 'assignee',
+                role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -122,7 +122,7 @@ const Project = () => {
             info: {
                 date: '2020',
                 period: '2020.10 ~ 2020.12',
-                role: 'assignee',
+                role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
@@ -133,7 +133,7 @@ const Project = () => {
             info: {
                 date: '2020',
                 period: '2020.10 ~ 2020.12',
-                role: 'assignee',
+                role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
