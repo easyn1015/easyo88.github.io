@@ -180,7 +180,7 @@ body {
     left: calc(100% + 1px);
     width: 51px;
     height: calc(100% + #{$doublePad});
-    background: #000;
+    background: $mainColor;
     z-index: 20;
 }
 
