@@ -6,7 +6,7 @@
 :root {
     --pad: max(20px, 4vmin);
 }
-$mainColor: #000;
+$mainColor: hsl(0, 0%, 5%);
 $pad: calc(max(20px, 4vmin));
 $doublePad: calc(#{$pad} * 2);
 $halfPad: calc(#{$pad} * 1.5);
@@ -191,6 +191,7 @@ body {
     left: $pad;
     padding: 40px;
     z-index: 50;
+    mix-blend-mode: difference;
 }
 
 .header-wrap {
