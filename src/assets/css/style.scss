@@ -61,12 +61,20 @@ html {
     user-select: none;
     -webkit-user-drag: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* iOS only */
+    @supports (-webkit-touch-callout: none) {
+        height: -webkit-fill-available;
+    }
 }
 body {
     background: $mainColor;
     min-height: 100vh;
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
+    /* iOS only */
+    @supports (-webkit-touch-callout: none) {
+        min-height: -webkit-fill-available;
+    }
 }
 
 .hide {
