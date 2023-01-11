@@ -105,6 +105,9 @@
                     .project-link {
                         flex-direction: column-reverse;
                         align-items: flex-end;
+                        &:hover {
+                            opacity: 1;
+                        }
                     }
                 }
             }
