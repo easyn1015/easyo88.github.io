@@ -35,7 +35,7 @@ export default function App() {
                                     <NavLink to='/'>Home</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/project'>Project</NavLink>
+                                    <NavLink to='/projects'>Projects</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to='/info'>Info</NavLink>
@@ -49,7 +49,7 @@ export default function App() {
                                 <CSSTransition key={location.pathname} classNames='page-fade' timeout={500}>
                                     <Routes location={location}>
                                         <Route path='/' element={<Home />} />
-                                        <Route path='/project' element={<Project />} />
+                                        <Route path='/projects' element={<Project />} />
                                         <Route path='/info' element={<Info />} />
                                     </Routes>
                                 </CSSTransition>

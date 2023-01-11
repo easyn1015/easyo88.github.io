@@ -3,18 +3,22 @@
 /* font */
 @import url('./reset.scss');
 @import url('./font.scss');
-
+:root {
+    --pad: max(20px, 4vmin);
+}
 $mainColor: #000;
 $pad: calc(max(20px, 4vmin));
 $doublePad: calc(#{$pad} * 2);
 $halfPad: calc(#{$pad} * 1.5);
-$backgroundPad: calc(#{$pad} * 4);
+// $backgroundPad: calc(#{$pad} * 4);
+body {
+    overscroll-behavior: contain;
+}
 @mixin title($padding) {
     position: relative;
     padding: $padding;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
     color: #fff;
 }
 @mixin pseudo() {
@@ -25,9 +29,9 @@ $backgroundPad: calc(#{$pad} * 4);
 @mixin mask() {
     left: 0;
     width: 100%;
-    height: $pad;
     background: rgba(0, 0, 0, 0.5);
     z-index: 50;
+    height: $pad;
 }
 .transition-group {
     position: relative;
@@ -85,8 +89,8 @@ body {
 }
 .main {
     position: fixed;
-    top: $pad;
-    left: $pad;
+    top: var(--pad);
+    left: var(--pad);
     width: calc(100vw - #{$doublePad});
     height: calc(100vh - #{$doublePad});
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -129,6 +133,7 @@ body {
 }
 .sub-title {
     @include title(5px 0 0);
+    font-weight: 300;
 }
 .title {
     @include title(0);
@@ -223,15 +228,17 @@ body {
 }
 @media screen and (max-width: 1280px) {
     .content {
-        padding: 156px $doublePad;
+        padding: calc(var(--pad) * 2 + 96px) calc(var(--pad) * 2);
         background: none;
     }
-
     .main-title-box {
         padding: 0 0 40px;
     }
     .main-title {
         font-size: 30px;
+    }
+    .sub-title {
+        font-size: 14px;
     }
     .header-wrap {
         position: relative;
