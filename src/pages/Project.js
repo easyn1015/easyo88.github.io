@@ -167,7 +167,7 @@ const Project = () => {
             <div className='project-box'>
                 <div className='title-box'>
                     <h3 className='title'>
-                        <span>Projects (Publishing & Frontend Develop)</span>
+                        <span>Projects</span>
                     </h3>
                 </div>
                 <div className='project-list'>
