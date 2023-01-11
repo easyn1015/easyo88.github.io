@@ -1,9 +1,12 @@
 import React from 'react';
 import './home.scss';
-import { OrbitControls, CameraShake } from '@react-three/drei';
 
 const Home = () => {
-    return <div />;
+    return (
+        <section className='home-wrap'>
+            <p>안녕하세요</p>
+        </section>
+    );
 };
 
 export default Home;
