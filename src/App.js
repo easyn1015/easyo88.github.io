@@ -17,6 +17,9 @@ export default function App() {
             setLoading(false);
         }, 2000);
     }, []);
+
+    const currentPage = location.pathname.substr(1);
+
     return (
         <>
             {loading ? (
@@ -44,7 +47,7 @@ export default function App() {
                         </nav>
                     </header>
                     <div className='main'>
-                        <main className='content' id='content'>
+                        <main className={`content ${currentPage}`} id='content'>
                             <TransitionGroup className='transition-group'>
                                 <CSSTransition key={location.pathname} classNames='page-fade' timeout={500}>
                                     <Routes location={location}>

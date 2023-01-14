@@ -1,0 +1,24 @@
+.info-wrap .info-box {
+    position: fixed;
+    bottom: 30%;
+    right: 30%;
+    ul li {
+        padding: 0 0 15px;
+        &:last-of-type {
+            padding: 0;
+        }
+        a {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 600;
+            transition-property: opacity;
+            transition-duration: 0.4s;
+            transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+            &:hover {
+                opacity: 0.25;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1280px) {
+}

@@ -7,6 +7,7 @@
     --pad: max(20px, 4vmin);
 }
 $mainColor: hsl(0, 0%, 5%);
+$fontColor: #fff;
 $pad: calc(max(20px, 4vmin));
 $doublePad: calc(#{$pad} * 2);
 $halfPad: calc(#{$pad} * 1.5);
@@ -51,16 +52,13 @@ $halfPad: calc(#{$pad} * 1.5);
 }
 /* common */
 html {
-    height: -webkit-fill-available;
-    scroll-behavior: smooth;
     font-size: 16px;
     font-family: 'Neue Montreal';
     line-height: 1;
     box-sizing: border-box;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-user-drag: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* mobile viewport bug fix */
+    height: -webkit-fill-available;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
     /* iOS only */
     @supports (-webkit-touch-callout: none) {
         height: -webkit-fill-available;
@@ -76,7 +74,6 @@ body {
         min-height: -webkit-fill-available;
     }
 }
-
 .hide {
     display: none;
 }
@@ -173,6 +170,9 @@ body {
     background: rgba(0, 0, 0, 0.4);
     overflow: auto;
     transition: all 0.2s;
+    &.info {
+        padding: 0 $halfPad;
+    }
 }
 .main:after {
     @include pseudo;
@@ -195,6 +195,7 @@ body {
 
 /* header */
 .header-wrap {
+    display: inline-block;
     position: absolute;
     top: $pad;
     left: $pad;
@@ -203,52 +204,32 @@ body {
     mix-blend-mode: difference;
 }
 
-.header-wrap {
-    nav {
-        ul {
-            li {
-                padding: 0 0 15px 0;
-            }
+.header-wrap nav ul {
+    li {
+        padding: 0 0 15px 0;
+    }
+}
+.header-wrap nav ul {
+    li:last-of-type {
+        padding: 0;
+    }
+}
+.header-wrap nav ul li {
+    a {
+        display: inline-block;
+        color: #fff;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        transition: all 0.2s;
+        &:hover {
+            opacity: 0.5;
         }
     }
 }
-.header-wrap {
-    nav {
-        ul {
-            li:last-of-type {
-                padding: 0;
-            }
-        }
-    }
-}
-.header-wrap {
-    nav {
-        ul {
-            li {
-                a {
-                    display: inline-block;
-                    color: #fff;
-                    font-size: 16px;
-                    line-height: 20px;
-                    font-weight: 700;
-                    transition: all 0.2s;
-                    &:hover {
-                        opacity: 0.5;
-                    }
-                }
-            }
-        }
-    }
-}
-.header-wrap {
-    nav {
-        ul {
-            li {
-                a.active {
-                    border-bottom: 1px solid #fff;
-                }
-            }
-        }
+.header-wrap nav ul li {
+    a.active {
+        border-bottom: 1px solid #fff;
     }
 }
 @media screen and (max-width: 1280px) {
@@ -265,21 +246,15 @@ body {
         position: relative;
         top: auto;
         left: auto;
-        padding: $doublePad;
+        padding: $doublePad 0 0 $doublePad;
     }
     .background.active .control-box {
         display: none;
     }
-    .header-wrap {
-        nav {
-            ul {
-                li {
-                    a {
-                        font-size: 14px;
-                        line-height: 1;
-                    }
-                }
-            }
+    .header-wrap nav ul li {
+        a {
+            font-size: 14px;
+            line-height: 1;
         }
     }
     .title {

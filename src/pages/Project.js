@@ -27,8 +27,8 @@ const ProjectList = (props) => {
                 {showDesc && (
                     <div className={`project-desc ${showDesc == true ? 'open-desc' : ''}`}>
                         <ul>
-                            <li>Language : {project.lang}</li>
                             <li>Period : {project.info.period}</li>
+                            <li>Language : {project.info.lang}</li>
                             <li>Contribution : {project.info.contribution}</li>
                         </ul>
                     </div>
@@ -55,7 +55,7 @@ const Project = () => {
             title: 'Yeungnam University',
             info: {
                 date: '2021',
-                period: '2022.10 ~ 2022.12',
+                period: '2021.06 ~ 2022.02',
                 role: 'Cooperation',
                 lang: 'HTML, CSS, Javascript',
                 contribution: 'Frontend Develop',
@@ -66,7 +66,7 @@ const Project = () => {
             title: 'Plain Korean',
             info: {
                 date: '2021',
-                period: '2021.10 ~ 2021.12',
+                period: '2021.05 ~ 2021.07',
                 role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
@@ -74,10 +74,21 @@ const Project = () => {
             path: 'https://plainkorean.kr/ko/index.do',
         },
         {
+            title: 'KLMC',
+            info: {
+                date: '2021',
+                period: '2021.01 ~ 2021.04',
+                role: 'Cooperation',
+                lang: 'HTML, CSS, Javscript',
+                contribution: 'Frontend Develop',
+            },
+            path: 'http://www.klmc.church/index.do',
+        },
+        {
             title: 'Ewha Lawschool',
             info: {
                 date: '2021',
-                period: '2021.10 ~ 2021.12',
+                period: '2021.01 ~ 2021.02',
                 role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
@@ -88,7 +99,7 @@ const Project = () => {
             title: 'BU Department',
             info: {
                 date: '2020',
-                period: '2020.10 ~ 2020.12',
+                period: '2020.08 ~ 2020.11',
                 role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
@@ -99,7 +110,7 @@ const Project = () => {
             title: 'BU Now',
             info: {
                 date: '2020',
-                period: '2020.10 ~ 2020.12',
+                period: '2020.08 ~ 2020.11',
                 role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
@@ -110,7 +121,7 @@ const Project = () => {
             title: 'KNU Department',
             info: {
                 date: '2020',
-                period: '2020.10 ~ 2020.12',
+                period: '2020.04 ~ 2020.11',
                 role: 'Cooperation',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
@@ -121,7 +132,7 @@ const Project = () => {
             title: 'Yonsei Global Health',
             info: {
                 date: '2020',
-                period: '2020.10 ~ 2020.12',
+                period: '2020.03 ~ 2020.06',
                 role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
@@ -132,7 +143,7 @@ const Project = () => {
             title: 'Ajou OIA',
             info: {
                 date: '2020',
-                period: '2020.10 ~ 2020.12',
+                period: '2020.02 ~ 2020.08',
                 role: 'Assignee',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
@@ -143,18 +154,18 @@ const Project = () => {
             title: 'Ajou University',
             info: {
                 date: '2020',
-                period: '2020.10 ~ 2020.12',
+                period: '2020.02 ~ 2020.08',
                 role: 'Cooperation',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
             },
-            path: 'https://www.ajou.ac.kr/oia/index.do',
+            path: 'https://www.ajou.ac.kr/kr/index.do',
         },
         {
             title: 'Ewha University',
             info: {
                 date: '2019',
-                period: '2019.10 ~ 2019.12',
+                period: '2019.02 ~ 2020.02',
                 role: 'Cooperation',
                 lang: 'HTML, CSS, Javscript',
                 contribution: 'Frontend Develop',
