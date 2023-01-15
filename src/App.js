@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, NavLink, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import { ControllableParticles } from './ControllableParticles';
 import Loading from './components/Loading';
 import Home from './pages/Home';
-import Project from './pages/Project';
+import ProjectPage from './pages/ProjectPage';
 import Info from './pages/Info';
 import './assets/css/style.scss';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-export default function App() {
+function LocationWrapper() {
     const location = useLocation();
+    return <div className={`content ${location.pathname.substr(1)}`} id='content' />;
+}
+
+export default function App() {
     const [loading, setLoading] = useState(false);
     useEffect(() => {
         setLoading(true);
@@ -18,10 +22,8 @@ export default function App() {
         }, 2000);
     }, []);
 
-    const currentPage = location.pathname.substr(1);
-
     return (
-        <>
+        <Router basename='/'>
             {loading ? (
                 <Loading />
             ) : (
@@ -47,13 +49,14 @@ export default function App() {
                         </nav>
                     </header>
                     <div className='main'>
-                        <main className={`content ${currentPage}`} id='content'>
+                        <main className={`content ${location.pathname.substr(1)}`} id='content'>
                             <TransitionGroup className='transition-group'>
                                 <CSSTransition key={location.pathname} classNames='page-fade' timeout={500}>
-                                    <Routes location={location}>
+                                    <Routes>
                                         <Route path='/' element={<Home />} />
-                                        <Route path='/projects' element={<Project />} />
+                                        <Route path='/projects' element={<ProjectPage />} />
                                         <Route path='/info' element={<Info />} />
+                                        <Route path='*' element={<Home />} />
                                     </Routes>
                                 </CSSTransition>
                             </TransitionGroup>
@@ -62,6 +65,6 @@ export default function App() {
                     <ControllableParticles />
                 </div>
             )}
-        </>
+        </Router>
     );
 }

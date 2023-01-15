@@ -1,44 +1,44 @@
 import React, { useState } from 'react';
 import './project.scss';
 
-const ProjectList = (props) => {
-    const projects = props.projects;
-    return projects.map((project) => {
-        //키값 추가
-        const [showDesc, setShowDesc] = useState(false);
-        return (
-            <li key={project.title.toString()}>
-                <a
-                    href={project.path}
-                    className={`project-link ${showDesc == true ? 'hover' : ''}`}
-                    onMouseOver={() => {
-                        setShowDesc(true);
-                    }}
-                    onMouseOut={() => {
-                        setShowDesc(false);
-                    }}
-                    target='_blank'
-                >
-                    <span className='info'>
-                        {project.info.date} / {project.info.role}
-                    </span>
-                    <span className='project'>{project.title}</span>
-                </a>
-                {showDesc && (
-                    <div className={`project-desc ${showDesc == true ? 'open-desc' : ''}`}>
-                        <ul>
-                            <li>Period : {project.info.period}</li>
-                            <li>Language : {project.info.lang}</li>
-                            <li>Contribution : {project.info.contribution}</li>
-                        </ul>
-                    </div>
-                )}
-            </li>
-        );
-    });
+const Project = ({ title, info, path }) => {
+    const [showDesc, setShowDesc] = useState(false);
+    return (
+        <li>
+            <a
+                href={path}
+                className={`project-link ${showDesc ? 'hover' : ''}`}
+                onMouseOver={() => setShowDesc(true)}
+                onMouseOut={() => setShowDesc(false)}
+                target='_blank'
+            >
+                <span className='info'>{`${info.date} / ${info.role}`}</span>
+                <span className='project'>{title}</span>
+            </a>
+            {showDesc && (
+                <div className={`project-desc ${showDesc ? 'open-desc' : ''}`}>
+                    <ul>
+                        <li>Period: {info.period}</li>
+                        <li>Language: {info.lang}</li>
+                        <li>Contribution: {info.contribution}</li>
+                    </ul>
+                </div>
+            )}
+        </li>
+    );
 };
 
-const Project = () => {
+const ProjectList = ({ projects }) => {
+    return (
+        <ul className='project-list'>
+            {projects.map((project) => (
+                <Project key={project.title} {...project} />
+            ))}
+        </ul>
+    );
+};
+
+const ProjectPage = () => {
     const projectDescs = [
         {
             title: 'Acrux',
@@ -173,6 +173,7 @@ const Project = () => {
             path: 'https://www.ewha.ac.kr/ewha/index.do',
         },
     ];
+
     return (
         <section className='project-wrap'>
             <div className='project-box'>
@@ -182,13 +183,11 @@ const Project = () => {
                     </h3>
                 </div>
                 <div className='project-list'>
-                    <ul>
-                        <ProjectList projects={projectDescs} />
-                    </ul>
+                    <ProjectList projects={projectDescs} />
                 </div>
             </div>
         </section>
     );
 };
 
-export default Project;
+export default ProjectPage;
