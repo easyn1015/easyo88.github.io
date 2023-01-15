@@ -23,7 +23,7 @@ export default function App() {
     }, []);
 
     return (
-        <Router basename='/'>
+        <Router basename='/portfolio'>
             {loading ? (
                 <Loading />
             ) : (
