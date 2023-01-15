@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, useLocation } from 'react-router-dom';
 import { ControllableParticles } from './ControllableParticles';
 import Loading from './components/Loading';
 import Home from './pages/Home';
@@ -10,11 +10,25 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 function LocationWrapper() {
     const location = useLocation();
-    return <div className={`content ${location.pathname.substr(1)}`} id='content' />;
+    return (
+        <main className={`content ${location.pathname.substr(1)}`} id='content'>
+            <TransitionGroup className='transition-group'>
+                <CSSTransition key={location.pathname} classNames='page-fade' timeout={500}>
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/projects' element={<ProjectPage />} />
+                        <Route path='/info' element={<Info />} />
+                        <Route path='*' element={<Home />} />
+                    </Routes>
+                </CSSTransition>
+            </TransitionGroup>
+        </main>
+    );
 }
 
 export default function App() {
     const [loading, setLoading] = useState(false);
+
     useEffect(() => {
         setLoading(true);
         setTimeout(() => {
@@ -49,18 +63,7 @@ export default function App() {
                         </nav>
                     </header>
                     <div className='main'>
-                        <main className={`content ${location.pathname.substr(1)}`} id='content'>
-                            <TransitionGroup className='transition-group'>
-                                <CSSTransition key={location.pathname} classNames='page-fade' timeout={500}>
-                                    <Routes>
-                                        <Route path='/' element={<Home />} />
-                                        <Route path='/projects' element={<ProjectPage />} />
-                                        <Route path='/info' element={<Info />} />
-                                        <Route path='*' element={<Home />} />
-                                    </Routes>
-                                </CSSTransition>
-                            </TransitionGroup>
-                        </main>
+                        <LocationWrapper />
                     </div>
                     <ControllableParticles />
                 </div>

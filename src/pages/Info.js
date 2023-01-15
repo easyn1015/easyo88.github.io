@@ -13,11 +13,7 @@ const Info = () => {
                             </a>
                         </li>
                         <li>
-                            <a
-                                href='https://www.notion.so/easyo/336ab7cddf2f463895266ef1e49c9d4f'
-                                title='notion'
-                                target='_blank'
-                            >
+                            <a href='#a' title='notion' target='_blank'>
                                 Resume ↗
                             </a>
                         </li>
