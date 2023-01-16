@@ -1,4 +1,5 @@
 import React from 'react';
+import Pdf from '../documents/Resume.pdf';
 import './info.scss';
 
 const Info = () => {
@@ -13,7 +14,7 @@ const Info = () => {
                             </a>
                         </li>
                         <li>
-                            <a href='#a' title='notion' target='_blank'>
+                            <a href={Pdf} title='Download' target='_blank'>
                                 Resume ↗
                             </a>
                         </li>

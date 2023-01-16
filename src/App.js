@@ -5,6 +5,7 @@ import Loading from './components/Loading';
 import Home from './pages/Home';
 import ProjectPage from './pages/ProjectPage';
 import Info from './pages/Info';
+import Contact from './pages/Contact';
 import './assets/css/style.scss';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -18,6 +19,7 @@ function LocationWrapper() {
                         <Route path='/' element={<Home />} />
                         <Route path='/projects' element={<ProjectPage />} />
                         <Route path='/info' element={<Info />} />
+                        <Route path='/contact' element={<Contact />} />
                         <Route path='*' element={<Home />} />
                     </Routes>
                 </CSSTransition>
@@ -58,6 +60,9 @@ export default function App() {
                                 </li>
                                 <li>
                                     <NavLink to='/info'>Info</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to='/contact'>Contact</NavLink>
                                 </li>
                             </ul>
                         </nav>
