@@ -49,7 +49,7 @@ const ProjectPage = () => {
                 lang: 'Vue, TypeScript, HTML, CSS',
                 contribution: 'Frontend Develop',
             },
-            path: '#a',
+            path: 'http://18.181.182.168:5173/',
         },
         {
             title: 'Yeungnam University',

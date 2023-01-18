@@ -14,7 +14,7 @@ function LocationWrapper() {
     return (
         <main className={`content ${location.pathname.substr(1)}`} id='content'>
             <TransitionGroup className='transition-group'>
-                <CSSTransition key={location.pathname} classNames='page-fade' timeout={500}>
+                <CSSTransition key={location.pathname} classNames='page-fade' timeout={1500}>
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='/projects' element={<ProjectPage />} />
