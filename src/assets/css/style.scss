@@ -37,7 +37,7 @@ $halfPad: calc(#{$pad} * 1.5);
     position: relative;
     transition: all 0.9s;
     width: 100%;
-    height: calc(100vh + #{$doublePad} + 150px);
+    height: 100%;
 }
 
 .page-fade-enter {
@@ -276,6 +276,9 @@ body {
         &.projects {
             padding: calc(var(--pad) * 2 + 105px) calc(var(--pad) * 2);
             height: calc(100% + #{$doublePad});
+            .transition-group {
+                height: calc(100vh + #{$doublePad} + 150px);
+            }
         }
     }
     .main-title {
