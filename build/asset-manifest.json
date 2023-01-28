@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1bc89c36.css",
+    "main.css": "/portfolio/static/css/main.2b8d5ded.css",
     "main.js": "/portfolio/static/js/main.2f96bfeb.js",
     "static/media/Resume.pdf": "/portfolio/static/media/Resume.c0b9da1f04b903f6e426.pdf",
     "static/media/neue_montreal_regular_400.woff": "/portfolio/static/media/neue_montreal_regular_400.012a4c74c72a10c8f4ee.woff",
@@ -8,11 +8,11 @@
     "static/media/neue_montreal_regular_400.woff2": "/portfolio/static/media/neue_montreal_regular_400.fc687a8c2dd6df76f5f3.woff2",
     "static/media/neue_montreal_light_300.woff2": "/portfolio/static/media/neue_montreal_light_300.9aac2f14c75e242fd812.woff2",
     "index.html": "/portfolio/index.html",
-    "main.1bc89c36.css.map": "/portfolio/static/css/main.1bc89c36.css.map",
+    "main.2b8d5ded.css.map": "/portfolio/static/css/main.2b8d5ded.css.map",
     "main.2f96bfeb.js.map": "/portfolio/static/js/main.2f96bfeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bc89c36.css",
+    "static/css/main.2b8d5ded.css",
     "static/js/main.2f96bfeb.js"
   ]
 }

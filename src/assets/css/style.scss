@@ -199,6 +199,10 @@ body {
     }
     &.projects {
         padding: 228px $halfPad;
+        height: calc(100% + #{$doublePad});
+        .transition-group {
+            height: calc(100vh + #{$doublePad} + 300px);
+        }
     }
     &.info {
         padding: 0 $halfPad;
