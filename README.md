@@ -1,4 +1,4 @@
-# Lee Ji Yeon's Portfolio
+# Panorama(Portfolio)
 
 This project is an interactive portfolio website designed to showcase my professional skills, qualifications, and past projects in a visually appealing manner. 
 The goal is to create an engaging and dynamic user experience that effectively communicates my capabilities and strengths as a developer.
